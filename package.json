@@ -1,0 +1,21 @@
+{
+    "name": "sitemap-generator",
+    "version": "1.0.0",
+    "description": "DESCRIPTION",
+    "main": "gulpfile.js",
+    "author": "Florian Burger",
+    "license": "MIT",
+    "main": "src/SitemapGenerator.js",
+    "scripts": {
+        "start": "gulp Sitemap"
+    },
+    "dependencies": {
+        "simplecrawler": "*",
+        "cheerio": "*",
+        "url": "*",
+        "moment": "*"
+    },
+    "devDependencies": {
+        "gulp": "*"
+    }
+}
