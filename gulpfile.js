@@ -6,7 +6,7 @@ const gulp = require('gulp'),
 // Compile JavaScript
 gulp.task('Sitemap', function (cb) {
 
-    var generator = new SitemapGenerator('https://www.hobbycup-bad-toelz.de', {
+    new SitemapGenerator('https://www.hobbycup-bad-toelz.de', {
 
         /**
          * @param {Object} item

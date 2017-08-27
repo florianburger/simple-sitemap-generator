@@ -25,6 +25,11 @@ const DEFAULT_OPTIONS = {
     filterFunction: function (urlItem) { return true }
 };
 
+/**
+ * @param {String} url
+ * @param {Object} options
+ * @constructor
+ */
 var SitemapGenerator = function (url, options) {
 
     this.url = url;
