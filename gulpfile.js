@@ -1,12 +1,12 @@
 // Include our Plugins
 const gulp = require('gulp'),
-      SitemapGenerator = require('./src/SitemapGenerator'),
+      SimpleSitemapGenerator = require('./src/SitemapGenerator'),
       fs = require('fs');
 
 // Compile JavaScript
 gulp.task('Sitemap', function (cb) {
 
-    new SitemapGenerator('https://www.hobbycup-bad-toelz.de', {
+    new SimpleSitemapGenerator('https://www.hobbycup-bad-toelz.de', {
 
         /**
          * @param {Object} item
@@ -32,4 +32,4 @@ gulp.task('Sitemap', function (cb) {
             fs.writeFile('./sitemap.xml', sitemap, 'utf-8', cb)
         }
     })
-});
+})

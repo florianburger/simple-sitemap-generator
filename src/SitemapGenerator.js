@@ -150,7 +150,7 @@ SitemapGenerator.prototype = {
         }
 
         if (metaRobots.length && /nofollow/i.test(metaRobots.attr('content'))) {
-            return [];
+            return []
         }
 
         // parse links
@@ -159,13 +159,13 @@ SitemapGenerator.prototype = {
 
             // exclude "mailto:" etc
             if (/^[a-z]+:(?!\/\/)/i.test(href)) {
-                return null;
+                return null
             }
 
             // exclude rel="nofollow" links
             var rel = $(this).attr('rel');
             if (/nofollow/i.test(rel)) {
-                return null;
+                return null
             }
 
             // remove anchors
@@ -173,7 +173,7 @@ SitemapGenerator.prototype = {
 
             // handle "//"
             if (/^\/\//.test(href)) {
-                return queueItem.protocol + ':' + href;
+                return queueItem.protocol +':'+ href;
             }
 
             // check if link is relative

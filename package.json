@@ -1,19 +1,35 @@
 {
     "name": "simple-sitemap-generator",
-    "version": "1.0.0",
-    "description": "DESCRIPTION",
-    "main": "gulpfile.js",
-    "author": "Florian Burger",
+    "version": "1.0.1",
+    "description": "Create a XML sitemap for your website.",
+    "main": "src/SitemapGenerator.js",
     "license": "MIT",
-    "main": "src/SimpleSitemapGenerator.js",
     "scripts": {
         "start": "gulp Sitemap"
     },
+    "author": {
+        "name": "Florian Burger",
+        "email": "info@florian-burger.de",
+        "url": "http://www.florian-burger.de"
+    },
+    "keywords": [
+        "sitemap",
+        "xml",
+        "sitemap.xml",
+        "generator",
+        "crawler",
+        "seo",
+        "google"
+    ],
     "dependencies": {
-        "simplecrawler": "*",
-        "cheerio": "*",
-        "url": "*",
-        "moment": "*"
+        "cheerio": "^0.22.0",
+        "moment": "^2.18.1",
+        "simplecrawler": "^1.1.5",
+        "url": "^0.11.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/crosby/simple-sitemap-generator.git"
     },
     "devDependencies": {
         "gulp": "*"
