@@ -3,6 +3,7 @@
 
 # NodeModules
 node_modules
+package-lock.json
 
 # Sitemap
 sitemap.xml

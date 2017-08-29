@@ -20,7 +20,7 @@ const DEFAULT_OPTIONS = {
 
     onFetchComplete: function (urlItem, event) {},
     onFetchError: function (queueItem, responseObject) {},
-    onComplete: function (sitemap, items) {},
+    onComplete: function (sitemap, queueItems) {},
 
     filterFunction: function (urlItem) { return true }
 };
@@ -138,6 +138,10 @@ SitemapGenerator.prototype = {
         return sitemap;
     },
 
+    /**
+     * @param {String} buffer
+     * @param {Object} queueItem
+     */
     _discoverResources: function (buffer, queueItem) {
         var $ = cheerio.load(buffer.toString('utf8'));
 
