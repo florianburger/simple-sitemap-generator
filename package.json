@@ -1,6 +1,6 @@
 {
     "name": "simple-sitemap-generator",
-    "version": "1.1.0",
+    "version": "2.0.0",
     "description": "Create a XML sitemap for your website.",
     "main": "src/SitemapGenerator.js",
     "license": "MIT",
@@ -22,9 +22,10 @@
         "google"
     ],
     "dependencies": {
-        "cheerio": "^1.0.0-rc.2",
-        "moment": "^2.18.1",
-        "simplecrawler": "^1.1.5",
+        "cheerio": "^1.0.0-rc.3",
+        "events": "^3.0.0",
+        "moment": "^2.24.0",
+        "simplecrawler": "^1.1.8",
         "url": "^0.11.0"
     },
     "repository": {
@@ -32,6 +33,14 @@
         "url": "https://github.com/crosby/simple-sitemap-generator.git"
     },
     "devDependencies": {
-        "gulp": "*"
+        "gulp": "^4.0.2"
+    },
+    "prettier": {
+        "trailingComma": "none",
+        "tabWidth": 4,
+        "printWidth": 120,
+        "useTabs": false,
+        "semi": true,
+        "singleQuote": false
     }
 }
