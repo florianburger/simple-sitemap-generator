@@ -15,7 +15,7 @@ gulp.task("Sitemap", function(cb) {
         restrictToBasepath: false,
         maxEntriesPerFile: 50000,
         maxDepth: 0,
-        filepath: "./sitemap.xml",
+        filepath: "./sitemap123.xml",
 
         ignore: url => {
             return url.indexOf("/page-to-ignore") != -1;

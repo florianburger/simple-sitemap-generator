@@ -66,6 +66,7 @@ class SitemapGenerator extends EventEmitter {
             ...options
         };
 
+
         if (options.ignoreInvalidSSL) {
             process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
         }
@@ -125,7 +126,7 @@ class SitemapGenerator extends EventEmitter {
         crawler.on("complete", () => {
             var content = me.generateSitemap(items);
 
-            fs.writeFile("./sitemap.xml", content, "utf-8", () => {
+            fs.writeFile(options.filepath, content, "utf-8", () => {
                 me.emit("complete", content, items);
             });
         });
